@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+ display: block;
+}
+
+ol,
+ul {
+ list-style: none;
+}
+
+html {
+ font-size: 1.125rem;
+}
+
+body {
+ font-family: "Public Sans", sans-serif;
+ font-optical-sizing: auto;
+ @apply bg-slate-200;
+}
