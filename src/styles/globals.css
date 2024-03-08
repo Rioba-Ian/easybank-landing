@@ -33,8 +33,23 @@ html {
  font-size: 1.125rem;
 }
 
+img {
+ max-width: 100%;
+}
+
 body {
  font-family: "Public Sans", sans-serif;
  font-optical-sizing: auto;
  @apply bg-slate-200;
+}
+
+/* color mix for button */
+.cta {
+ @apply rounded-full px-8 py-2 text-white;
+ background: rgb(49, 211, 92);
+ background: linear-gradient(
+  90deg,
+  rgba(49, 211, 92, 1) 0%,
+  rgba(43, 183, 218, 1) 100%
+ );
 }

@@ -2,10 +2,15 @@
 import Navigation from "./Navigation.astro";
 ---
 
-<header class="flex">
- <div id="header-container">
+<header class="py-4 bg-white border-b-[1px] border-b-gray-400 font-light">
+ <div id="header-container" class="flex max-w-7xl mx-auto items-center">
   <img src="/logo.svg" alt="Easy bank Logo" />
+  <Navigation />
  </div>
-
- <Navigation />
 </header>
+
+<style>
+ #header-container {
+  width: min(80%, 100%);
+ }
+</style>
