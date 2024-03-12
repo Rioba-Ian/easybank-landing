@@ -53,3 +53,16 @@ body {
   rgba(43, 183, 218, 1) 100%
  );
 }
+
+/* navbar styling */
+#hamburger-icon.open {
+ opacity: 0;
+ transform: translateX(-100%);
+ transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#hamburger-icon.close {
+ opacity: 1;
+ transform: translateX(0%);
+ transition: opacity 0.3s ease, transform 0.3s ease;
+}
