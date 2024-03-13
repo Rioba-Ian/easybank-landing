@@ -1,11 +1,15 @@
 <section
- class="relative flex md:flex-row items-center justify-center flex-col-reverse -z-30 bg-white pb-16"
+ id="hero-section"
+ class="relative flex md:flex-row items-center justify-center flex-col-reverse -z-30 bg-white pb-16 md:pb-20 md:pt-20"
 >
- <div id="hero-text" class="mx-auto text-center space-y-4">
-  <h1 class="mx-auto md:w-full text-3xl md:text-5xl text-dark-blue font-normal">
+ <div
+  id="hero-text"
+  class="md:ml-auto text-center md:text-left space-y-4 md:space-y-8 md:py-6"
+ >
+  <h1 class="mx-auto text-3xl md:text-6xl text-dark-blue font-normal">
    Next generation digital banking
   </h1>
-  <p class="text-greyish-blue text-xs md:text-base w-full">
+  <p class="text-greyish-blue text-xs md:text-base w-full md:w-4/5">
    Take your financial life online. Your Easybank account will be a
    one-stop-shop for spending, saving, budgeting, investing, and much more.
   </p>
@@ -14,17 +18,38 @@
 
  <div id="hero-images" class="relative">
   <picture class="relative -z-20">
-   <source srcset="/images/bg-intro-desktop.svg" media="(min-width: 760px)" />
+   <source
+    srcset="/images/bg-intro-desktop.svg"
+    media="(min-width: 760px)"
+    class=""
+    id="hero-background-desktop"
+   />
    <img
     src="/images/bg-intro-mobile.svg"
-    class="-translate-y-9 -mb-12"
+    class="-translate-y-9 -mb-12 md:scale-150 md:ml-20 md:-mt-20"
     alt="image of easy banking app."
    />
   </picture>
-  <div id="hero-images-app" class="absolute -z-10 -top-[116px]">
+  <div
+   id="hero-images-app"
+   class="absolute -z-10 -top-[116px] md:-top-36 md:ml-10"
+  >
    <img src="/images/image-mockups.png" alt="image of easy banking app." />
   </div>
  </div>
 </section>
 
-<style></style>
+<style>
+ @media (min-width: 760px) {
+  #hero-section {
+   display: grid;
+   grid-template-columns: 50% 1fr;
+   gap: 1rem;
+  }
+
+  #hero-text {
+   width: 70%;
+   margin-right: auto;
+  }
+ }
+</style>

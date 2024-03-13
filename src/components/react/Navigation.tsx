@@ -5,8 +5,6 @@ import { useState } from "react";
 export default function Navigation() {
  const [isOpen, setIsOpen] = useState(false);
 
- console.log(isOpen);
-
  return (
   <nav className="flex-1 flex justify-between">
    <ul className="hidden md:flex flex-col md:flex-row items-center mx-auto gap-8">
