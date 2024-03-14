@@ -1,6 +1,6 @@
 <section
  id="hero-section"
- class="relative flex md:flex-row items-center justify-center flex-col-reverse -z-30 bg-white pb-16 md:pb-20 md:pt-20"
+ class="relative overflow-x-clip flex md:flex-row items-center justify-center flex-col-reverse -z-30 bg-white pb-16 md:pb-20 md:pt-20"
 >
  <div
   id="hero-text"
@@ -9,7 +9,9 @@
   <h1 class="mx-auto text-3xl md:text-6xl text-dark-blue font-normal">
    Next generation digital banking
   </h1>
-  <p class="text-greyish-blue text-xs md:text-base w-full md:w-4/5">
+  <p
+   class="text-greyish-blue text-xs text-center md:text-left md:text-base md:w-4/5"
+  >
    Take your financial life online. Your Easybank account will be a
    one-stop-shop for spending, saving, budgeting, investing, and much more.
   </p>
@@ -50,6 +52,13 @@
   #hero-text {
    width: 70%;
    margin-right: auto;
+  }
+ }
+
+ @media (max-width: 567px) {
+  #hero-text {
+   width: min(90%, 100%);
+   margin: 0 auto;
   }
  }
 </style>
