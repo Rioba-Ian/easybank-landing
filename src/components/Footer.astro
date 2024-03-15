@@ -23,7 +23,7 @@
       ></g
      ></svg
     >
-    <h5 class="text-2xl">easybank</h5>
+    <h5 class="text-xl">easybank</h5>
    </div>
    <div id="socials" class="flex items-center gap-2">
     <img src="/images/icon-facebook.svg" alt="facebook icon" />
@@ -35,7 +35,7 @@
   </div>
 
   <div id="footer-links-1">
-   <ul class="text-center">
+   <ul class="text-center md:text-left md:space-y-2 text-sm">
     <li><a href="#">About Us</a></li>
     <li><a href="#">Contact</a></li>
     <li><a href="#">Blog</a></li>
@@ -43,7 +43,7 @@
   </div>
 
   <div id="footer-links-2">
-   <ul class="text-center">
+   <ul class="text-center md:text-left md:space-y-2 text-sm">
     <li><a href="#">Careers</a></li>
     <li><a href="#">Support</a></li>
     <li><a href="#">Privacy Policy</a></li>
@@ -59,6 +59,10 @@
 
 <style>
  #footer-container {
+  width: min(80%, 1440px);
+  margin: 0 auto;
+ }
+ #footer-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -71,8 +75,13 @@
  }
  @media (min-width: 768px) {
   #footer-container {
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(6, 1fr);
    font-size: 1rem;
+   padding: 10vmin 0;
+  }
+
+  #footer-cta {
+   grid-column: 5 / -1;
   }
  }
 </style>
