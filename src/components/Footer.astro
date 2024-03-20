@@ -25,12 +25,33 @@
     >
     <h5 class="text-xl">easybank</h5>
    </div>
-   <div id="socials" class="flex items-center gap-2">
-    <img src="/images/icon-facebook.svg" alt="facebook icon" />
-    <img src="/images/icon-youtube.svg" alt="youtube icon" />
-    <img src="/images/icon-twitter.svg" alt="twitter icon" />
-    <img src="/images/icon-pinterest.svg" alt="pinterest icon" />
-    <img src="/images/icon-instagram.svg" alt="instagram icon" />
+   <div id="socials" class="">
+    <ul class="flex items-center gap-2">
+     <li>
+      <a href="/"><img src="/images/icon-facebook.svg" alt="facebook icon" /></a
+      >
+     </li>
+     <li>
+      <a href="/">
+       <img src="/images/icon-twitter.svg" alt="twitter icon" />
+      </a>
+     </li>
+     <li>
+      <a href="/">
+       <img src="/images/icon-youtube.svg" alt="youtube icon" />
+      </a>
+     </li>
+     <li>
+      <a href="/">
+       <img src="/images/icon-pinterest.svg" alt="pinterest icon" />
+      </a>
+     </li>
+     <li>
+      <a href="/">
+       <img src="/images/icon-instagram.svg" alt="instagram icon" />
+      </a>
+     </li>
+    </ul>
    </div>
   </div>
 
@@ -83,5 +104,14 @@
   #footer-cta {
    grid-column: 5 / -1;
   }
+ }
+
+ #footer-container a {
+  @apply hover:text-lime-green;
+ }
+
+ #footer-container a:hover > img {
+  scale: 1.25;
+  color: green;
  }
 </style>

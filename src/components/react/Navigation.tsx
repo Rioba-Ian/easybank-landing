@@ -5,25 +5,36 @@ import { useState } from "react";
 export default function Navigation() {
  const [isOpen, setIsOpen] = useState(false);
 
- console.log(isOpen);
-
  return (
   <nav className="flex-1 flex justify-between">
-   <ul className="hidden md:flex flex-col md:flex-row items-center mx-auto gap-8">
+   <ul
+    className="hidden md:flex flex-col md:flex-row items-center mx-auto gap-8"
+    id="desktop-nav-links"
+   >
     <li>
-     <a href="/">Home</a>
+     <a href="/" className="hover:underline-offset-1">
+      Home
+     </a>
     </li>
     <li>
-     <a href="/">About</a>
+     <a href="/" className="hover:underline-offset-1">
+      About
+     </a>
     </li>
     <li>
-     <a href="/">Contact</a>
+     <a href="/" className="hover:underline-offset-1">
+      Contact
+     </a>
     </li>
     <li>
-     <a href="/">Blog</a>
+     <a href="/" className="hover:underline-offset-1">
+      Blog
+     </a>
     </li>
     <li>
-     <a href="/">Careers</a>
+     <a href="/" className="hover:underline-offset-1">
+      Careers
+     </a>
     </li>
    </ul>
 
