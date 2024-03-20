@@ -4,14 +4,51 @@ import Hero from "../components/Hero.astro";
 import MainContent from "../components/MainContent.astro";
 import Footer from "../components/Footer.astro";
 import LatestArticles from "../components/LatestArticles.astro";
+import { SEO } from "astro-seo";
 ---
 
 <html lang="en">
  <head>
   <meta charset="utf-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
+  <SEO
+   title="Easybank - Your Financial Solution"
+   description="Empowering your financial journey with Easybank. Explore our services, manage your money, and achieve your goals."
+   openGraph={{
+    basic: {
+     title: "Easybank - Your Financial Solution",
+     type: "website",
+     image:
+      "https://res.cloudinary.com/drxurk7lu/image/upload/v1710923097/easy-banking-landingsite/Easybank_-_Your_Financial_Solution_2_bs7xld.jpg", // Replace with your desired image URL
+    },
+   }}
+   twitter={{
+    creator: "@rioba_riri",
+    image:
+     "https://res.cloudinary.com/drxurk7lu/image/upload/v1710923097/easy-banking-landingsite/Easybank_-_Your_Financial_Solution_2_bs7xld.jpg",
+   }}
+   extend={{
+    // Extending the default link tags
+    link: [{ rel: "icon", href: "/logo.svg" }],
+    // Extending the default meta tags
+    meta: [
+     {
+      name: "twitter:image",
+      content:
+       "https://res.cloudinary.com/drxurk7lu/image/upload/v1710923097/easy-banking-landingsite/Easybank_-_Your_Financial_Solution_2_bs7xld.jpg",
+     },
+     { name: "twitter:title", content: "Easybank - Your Financial Solution" },
+     {
+      name: "twitter:description",
+      content:
+       "Empowering your financial journey with Easybank. Frontend Development Challenge by Frontend Mentor.",
+     },
+    ],
+   }}
+  />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
