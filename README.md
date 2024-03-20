@@ -1,47 +1,57 @@
-# Astro Starter Kit: Minimal
+# Frontend Mentor - Easybank landing page solution
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). The design challenge ![Easy Banking Landing Page Design](./src/assets/design/desktop-design.jpg)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Table of contents
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Frontend Mentor - Easybank landing page solution](#frontend-mentor---easybank-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+  - [Author](#author)
 
-## 🚀 Project Structure
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-Inside of your Astro project, you'll see the following folders and files:
+## Overview
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### The challenge
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Users should be able to:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Screenshot
 
-## 🧞 Commands
+![Screenshot](https://res.cloudinary.com/drxurk7lu/image/upload/v1710923097/easy-banking-landingsite/Easybank_-_Your_Financial_Solution_2_bs7xld.jpg)
 
-All commands are run from the root of the project, from a terminal:
+### Links
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Solution URL: [Solution Link](https://www.frontendmentor.io/solutions/easy-banking-landing-site-CIVt4OMyf5)
+- Live Site URL: [Live Site](https://easybank-landing-pi.vercel.app/)
 
-## 👀 Want to learn more?
+## My process
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Build it as a purely static site and add seo for visibility.
+
+### Built with
+
+- Astro
+- Atsro React for interactivity
+- Tailwind CSS
+- Astro SEO
+
+### What I learned
+
+It was my first time using Astro for a project and completely loved how easy it was to get up and running.
+
+## Author
+
+- Website - [Rioba Ian](https://www.riobaian.dev)
+- Frontend Mentor - [@Rioba-Ian](https://www.frontendmentor.io/profile/Rioba-Ian)
+- Twitter - [@rioba_riri](https://www.twitter.com/rioba_riri)
