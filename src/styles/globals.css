@@ -66,3 +66,52 @@ body {
  transform: translateX(0%);
  transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+#mobile-nav {
+ width: min(90%, 100%);
+}
+
+#mobile-nav li:nth-last-child(1) {
+ padding-bottom: 1em;
+}
+
+#mobile-nav li:nth-child(1) {
+ padding-top: 1em;
+}
+
+/* Add this to your globals.css */
+@keyframes slideIn {
+ from {
+  transform: translateY(-100%);
+ }
+ to {
+  transform: translateY(0);
+ }
+}
+
+@keyframes slideOut {
+ from {
+  transform: translateY(0);
+ }
+ to {
+  transform: translateY(-100%);
+ }
+}
+
+/* Add this to your globals.css */
+.cta {
+ transition: all 0.3s ease;
+}
+
+.close {
+ animation: rotateClose 0.3s forwards;
+}
+
+@keyframes rotateClose {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 100% {
+  transform: rotate(90deg);
+ }
+}
